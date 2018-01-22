@@ -1,0 +1,14 @@
+<div class="finalcart">
+    <img src="assets/cart.jpg"><p class="selecteditem">{{cart.length}}</p><br><br><br><br><br>
+<div *ngFor="let item of cart,let i=index" class="detail">
+    {{item['name']}}<br>
+    Price:{{item['price']}}<br>
+    <button (click)="Delete(i)">Remove</button>
+  </div><br><br><br>
+TotalPrice:{{totalPrice | currency:USD:true}}<br>
+Tax:9.00%<br>
+Total price with tax:{{totalPrice + totalPrice*0.09 | currency:USD:true}}
+</div>
+
+
+

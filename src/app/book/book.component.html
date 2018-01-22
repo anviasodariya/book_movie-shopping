@@ -1,0 +1,39 @@
+<div class="bookstyle"> 
+                <p class="bstyle">Books Information</p>
+        <table class="table table-bordered table-inverse">
+                <tr>
+                <th>SELECT</th>
+                <th>NAME</th>
+                <th>PRICE</th>
+                </tr>
+                <tr *ngFor="let data of dataobject">
+                <td><button class="btn btn-secondary btn-lg active" (click)="Buy(data)">Add To Cart</button> 
+                                </td>
+                <td>{{data.name}}</td>
+                <td>{{data.price}}</td>
+                </tr>
+                </table>
+</div>   
+<!-- <table class="table table-bordered table-inverse">
+<tr>
+<th>select</th>
+<th>name</th>
+<th>price</th>
+</tr>
+<tr *ngFor="let data of dataobject">
+<td><input type="checkbox" (click)="select(data)" [checked]="bookname"> 
+                </td>
+<td>{{data.name}}</td>
+<td>{{data.price}}</td>
+</tr>
+<button (click)="add(value)" class="btn btn-primary">ADD</button>
+</table> -->
+<!-- <button (click)="select(data)"  class="btn btn-primary">ADD</button> -->
+
+
+
+
+    
+
+
+

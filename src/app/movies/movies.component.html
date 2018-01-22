@@ -1,0 +1,16 @@
+<div class="moviestyle">
+                <p class="mstyle">Movies Information</p>
+        <table class="table table-bordered table-inverse">
+                <tr>
+                <th>SELECT</th>
+                <th>NAME</th>
+                <th>PRICE</th>
+                </tr>
+                <tr *ngFor="let data of dataobject">
+                <td><button class="btn btn-secondary btn-lg active" (click)="Buymovie(data)">Add To Cart</button> 
+                                </td>
+                <td>{{data.name}}</td>
+                <td>{{data.price}}</td>
+                </tr>
+        </table>  
+</div>
